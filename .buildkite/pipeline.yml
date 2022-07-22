@@ -3,4 +3,10 @@ steps:
     command: "script.sh"
     parallelism: 5
     agents:
-      queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
+      queue: linux-amd64-gpu
+  - label: ":console:"
+    command: "script.ps1"
+    artifact_paths: "artifacts/*"
+    parallelism: 5
+    agents:
+      queue: windows-gpu

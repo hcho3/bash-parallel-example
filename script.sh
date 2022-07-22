@@ -11,6 +11,7 @@ ______           _      ______               _ _      _   _____                 
 \____/ \__,_|___/_| |_| \_|  \__,_|_|  \__,_|_|_|\___|_| \____/_/\_\__,_|_| |_| |_| .__/|_|\___(_)
                                                                                   | |
                                                                                   |_|\033[0m"
+docker run --rm --gpus all nvidia/cuda:11.0.3-base-ubuntu20.04 nvidia-smi
 echo -e "Yay! It all worked! 👍\n"
 
 echo "BUILDKITE_PARALLEL_JOB: $BUILDKITE_PARALLEL_JOB"
